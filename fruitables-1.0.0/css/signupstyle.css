@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/signupbg.jpg') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.register-card {
+    background-color: transparent; /* Semi-transparent background */
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.register-card h2 {
+    color: #0d4153e7;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.register-card input[type="text"],
+.register-card input[type="tel"],
+.register-card input[type="email"],
+.register-card input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+}
+
+.register-card input[type="text"]::placeholder,
+.register-card input[type="email"]::placeholder,
+.register-card input[type="password"]::placeholder {
+    color: #999;
+}
+
+.register-card .terms {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.register-card .terms input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.register-card .terms a {
+    color: #4A00E0;
+    text-decoration: none;
+}
+
+.register-card .terms a:hover {
+    text-decoration: underline;
+}
+
+.register-card button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4A00E0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-card button[type="submit"]:hover {
+    background-color: #3700b3;
+}
